@@ -20,9 +20,9 @@ for i, arg in enumerate(sys.argv):
         continue
 
     if arg.isdigit():
-        cur.execute("SELECT * FROM Pokemon WHERE pokedex_number=?", (arg,))
+        cur.execute("SELECT * FROM pokemon WHERE pokedex_number=?", (arg,))
     else:
-        cur.execute("SELECT * FROM Pokemon WHERE name=?", (arg.capitalize(),))
+        cur.execute("SELECT * FROM pokemon WHERE name=?", (arg.capitalize(),))
 
     pokemon = cur.fetchone()
 
