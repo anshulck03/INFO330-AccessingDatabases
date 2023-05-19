@@ -12,7 +12,7 @@ if len(sys.argv) != 7:
     sys.exit()
 
 team = []
-conn = sqlite3.connect('pokemon.sqlite')
+conn = sqlite3.connect('Pokemon.sqlite')
 cur = conn.cursor()
 
 for i, arg in enumerate(sys.argv):
